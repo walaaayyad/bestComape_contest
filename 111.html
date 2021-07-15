@@ -1,0 +1,912 @@
+<html><head>
+	<title>Compare Baby Monitors by Technology,Audio,Video</title>
+    <meta name="description" content="Find and compare the best Baby Monitors, as defined by the experts.Which Baby Monitors is the right for you. Compare features and Technology,Audio,Video,Movement,Temperature,Signal Range,Battery Life,Technology,Screen Size,Frequency,Signal Range,Address,Website,Email,Phone,Price,Estimated Price, Baby Monitors comparison.Top Baby Monitors today.Family - Baby Monitors reviews and characteristics.Best Baby Monitors.Baby Monitors comparison, reviews and ratings">
+    <meta name="keywords" content="Baby Monitors,Technology,Audio,Video,Movement,Temperature,Signal Range,Battery Life,Technology,Screen Size,Frequency,Signal Range,Address,Website,Email,Phone,Price,Estimated Price,Baby Monitors reviews,best Baby Monitors comparison, reviews and ratings">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fix responsive issue-->
+    
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="http://www.bestcompares.com/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="http://www.bestcompares.com/grid_table/jquery.dataTables.css">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="http://www.bestcompares.com/grid_table/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="http://www.bestcompares.com/grid_table/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="http://www.bestcompares.com/grid_table/jquery.dataTables.delay.min.js"></script>
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    
+    <script src="http://www.bestcompares.com/js/jquery-ui-1.8.2.custom.min.js"></script>
+    <link rel="stylesheet" href="http://www.bestcompares.com/css/jquery-ui-1.8.2.custom.css">
+    <link rel="stylesheet" href="http://www.bestcompares.com/css/style.css"> 
+    <link rel="stylesheet" href="./responsive.css">  <!--fix responsive issue-->
+
+      <script type="text/javascript" src="/js/script.js"></script>
+      <script type="text/javascript" src="/js/fixedheader.js"></script>
+   
+   
+
+    
+<script>
+
+	$(window).load(function(){
+						
+  $('#dvLoading').fadeOut(000);
+});
+	
+	
+	$(document).ready(function()
+{
+	
+	
+	var initParams ={
+		
+		"bProcessing": false,
+	        "bServerSide": true,
+	        "sServerMethod": "GET",
+	        "sAjaxSource": "/table_data.php?catlinkok=baby_monitors",
+	        "iDisplayLength": 10,
+	        "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+	        "aaSorting": [[0, 'asc']],
+	        "sPaginationType": "full_numbers",
+	        "aoColumns": [
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": false, "bSearchable": true, "bSortable": true },
+			//{ "bVisible": false, "bSearchable": true, "bSortable": true },
+			{ "bVisible": false, "bSearchable": true, "bSortable": true }
+	        ]
+	};
+
+
+
+var oTable = $('#data').dataTable(initParams).fnSetFilteringDelay(700);	
+new FixedHeader( oTable );
+$.ajax({
+	   
+              url:'show_hide_filter.php', 
+              traditional : true,
+              dataType: "json",
+              success: function(data) 
+               {
+				   data.toString();
+				  
+				   if(data['Name']==null)
+				    {
+					  document.getElementById('name_title').style.display='none';	
+					  document.getElementById('group_inner_1').style.display='none';	
+						
+					}
+					
+					if(data['Projector Type']==null)
+				    {
+						document.getElementById('group_inner_4').style.display='none';	
+					    document.getElementById('pt_title').style.display='none';
+						
+					}
+					
+				    if(data['price']==null)
+				    {
+						document.getElementById('price_title').style.display='none';	
+					    document.getElementById('price_box').style.display='none';
+						
+					}
+				   
+                    if(data['Image Size']==null)
+				    {
+						document.getElementById('image_title').style.display='none';	
+					    document.getElementById('image_box').style.display='none';
+						
+					}
+					
+					if(data['Contrast Ratio']==null)
+				    {
+						document.getElementById('ratio_title').style.display='none';	
+					    document.getElementById('ratio_box').style.display='none';
+						
+					}
+					
+					 if(data['Projection Technology']==null)
+				    {
+						document.getElementById('tech_title').style.display='none';	
+					    document.getElementById('group_inner_3').style.display='none';
+						
+					}
+					
+					
+					 if(data['Comapany']==null)
+				    {
+						document.getElementById('company_title').style.display='none';	
+					    document.getElementById('company_box').style.display='none';
+						
+					} 
+					
+					 if(data['Number of Colors']==null)
+				    {
+						document.getElementById('color_title').style.display='none';	
+					    document.getElementById('color_box').style.display='none';
+						
+					}
+					
+				}
+				
+				
+				
+			});
+
+	
+setTimeout(set_num_record,2000);
+	
+});
+
+
+</script>	
+
+
+
+
+<style> 
+.tab_font,.tab_font a{color:#ae1804; margin-left:2px; margin-right:5px;font-weight:700; }
+.dataTables_length{display:none;}
+.dataTables_filter{display:none;}
+.left_panel{float:left;width:20%;}	
+.filter_title{margin:20px 0px 0px 0px;padding: 5px;}
+.checkbox-label{display:block;}	
+.radio-wrapper{display:block;}
+	
+#dvLoading
+{  background:url(http://www.bestcompares.com/images/32.gif) no-repeat center center;
+   height: 108%;
+   width: 106%;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   margin: -25px 0 0 -25px;
+   background-color:rgba(0, 0, 0, 0.6);
+}
+.tagl-text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 140%;
+    vertical-align: top;
+    white-space: normal;
+    padding: 5px 20px 5px 13px;
+}
+.bbx {-moz-box-sizing: border-box;}
+.tagl-x {
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 26px;
+    padding-left: 5px;
+    padding-right: 6px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    vertical-align: top;
+    width: 20px;
+}
+.tagl-item {margin-bottom: 0;}
+.tagl-select {cursor: pointer;}
+.tagl-item {
+    background-color:#17232c;border-top:solid 3px #ae1804;
+    color: #fff;
+    display: inline-block;   
+    max-width: 120%;
+    position: relative;
+    vertical-align: top; margin: -5px 15px 0 0;
+    white-space: nowrap;
+}
+.nosel {-moz-user-select: none;}	
+
+
+
+
+</style>
+
+<link href="http://www.bestcompares.com/css/style.css" rel="stylesheet" type="text/css">
+
+ <!--[if lt IE 9]>
+<script type="text/javascript">
+ document.createElement('header');
+ document.createElement('nav');
+ document.createElement('menu');
+ document.createElement('section');
+ document.createElement('article');
+ document.createElement('aside');
+ document.createElement('footer');
+</script>
+<![endif]-->
+
+</head>
+<body data-new-gr-c-s-check-loaded="14.1021.0" data-gr-ext-installed="">
+
+<div id="dvLoading" style="display: none;"></div>
+
+
+<div id="whole_container"><!---------Start Whole Container------------->
+
+<div class="header_back">
+<header>
+<div class="logo"><img src="http://www.bestcompares.com/images/logo.png"></div>
+
+
+<!--check edw, svinw to paron search k prosthetoume to parakatw-->
+<!-- <div class="search"><input type="text" id="product_search" name="product_search" /></div> --> 
+ <!--check edw search-->
+		<div id="search">
+			<!-- <form method="get" action="http://...??????????????????????????????????????????????????????????????????"> -->
+                        <form method="get" action="http://www.bestcompares.com/s/">
+            
+    <input type="hidden" name="cx" value="partner-pub-1170052189431952:5025433479">
+    <input type="hidden" name="cof" value="FORID:10">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="hidden" name="sa" value="Search">
+			<input type="text" name="q" id="product_search" value="" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+			<input type="image" id="searchBtn" src="http://www.bestcompares.com/images/searchBtnTrans.gif" value="submit" alt="..">
+			</form>
+		</div>
+ 
+ 
+<!-- menu start -->        
+<div class="browse_div" id="clickbrowse_div">
+<div class="browse_img">
+
+<div id="catlink" style="display:none;">baby_monitors</div>
+<div id="cat1" style="display:none;">Family</div>
+
+</div>
+</div> 
+<!-- menu start --> 
+
+
+<div id="showmenu"></div>
+
+
+
+<!---check edw, afairoume ta login,klidakia,ktl apo deksia-->       
+<!--<div class="right_div">
+<div class="img_div"><img src="images/find1.png"></div><div class="img_div"><img src="images/head_key.png"></div>
+</div>-->
+
+<div class="diafimisi">
+<div class="metakini_728"><div class="ads01" style="position: static; top: 1404px; left: 428px; z-index: 100;">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- bestcompares728 -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-1170052189431952" data-ad-slot="6942818673"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div></div>
+</div><!--check edw, prosthetoume th diafimisi-->
+
+
+<div class="clear_b"></div>
+</header>
+<div class="clear_b"></div>
+</div>
+
+<!--check edw, allaksa to id="main_container" me to id="main_container_up" giati to id main_container einai k 2 seires pio katw-->
+<div id="main_container_up" style="min-height: 120px;!important"><!---------Start Main Container-------------> 
+
+
+</div><!--------------End Main Container----------------->
+
+<div id="main_container">
+
+
+<div class="breadcrumb">
+<ul>
+<li class="color"><a href="http://www.bestcompares.com/">Home</a></li>
+<li><img src="http://www.bestcompares.com/images/bread.jpg"></li>
+<li class="color"><a href="http://www.bestcompares.com/cat1/family/">Family</a></li>
+<li><img src="http://www.bestcompares.com/images/bread.jpg"></li>
+<li>Baby Monitors</li>
+</ul>
+<div class="clear_b"></div>
+</div>
+
+
+
+<div class="full_width"> 
+
+<div class="compare_txt"><span class="compare_icn"></span><h5>Compare</h5></div>
+
+<!--check edw, mhpws prepei na apenergopoihthei ayto, einai mallon gia ta widgets,,des to-->
+<div class="emb_lst"><span class="boxxx1"></span><p>Embed</p></div>
+
+<!--check edw, ta social buttons den exoun link href, logika tha prepei na bei kapws etsi:
+<div class="msg"><a href="???????????" onclick="" style=""></a></div>
+molis ta prostheseis energopoihse sto style.css ta "social klaseis me a" kai apenergopoihse ta "social klaseis xwris a"-->
+
+<div class="msg"></div>
+<div class="gplus"></div>
+<div class="twitter"></div>
+<div class="fb"></div>
+
+
+ </div>
+
+
+
+<div class="clear_b"></div>
+
+
+
+
+<h1 style="font-family: Helvetica, Arial, sans-serif; margin-bottom:10px; color:#444;">Compare Baby Monitors</h1>
+
+<div class="maincont">
+
+
+<div class="left_panel"> <!--- filter panel starts here  -->
+
+
+
+
+<div class="filter_title">   <!---- Brand or Model block starts here --->  
+<div class="title-text-box">Refine Your Search</div></div>
+<div style="display: block;" class="filter_group filter_group_v2">
+	<!----  <p onClick="reset_filter()" style="cursor:pointer;" id="reset_button"><span class="tab_font">Reset </span></p> -->
+    <a href="/" id="reset_button"><span class="tab_font">Reset </span>161 Results</a> 
+</div> <!---- Brand or Model block end here ---> 
+
+
+<form name="left_panel" id="left_panel">
+
+
+
+
+
+
+<div class="filter_title clearfix nosel" id="name_title">   <!---- Brand or Model block starts here --->  
+<div class="title-text-box" id="name_box">Search</div></div>
+<div style="display: block;" id="group_inner_1" class="filter_group filter_group_v2">
+	<div>
+	<!----	<form autocomplete="off" class="filter-search-bar">
+			<input placeholder="" class="inp_srch" type="text" name="f_name" id="f_name" onKeyUp="get_table_by_filter()">
+		</form>  -->
+        <input placeholder="" class="inp_srch" type="text" name="titlemoi" id="titlemoi" onkeyup="">
+	</div>
+</div> <!---- Brand or Model block end here --><script type="text/javascript">
+   $("#titlemoi").keyup(function() {
+    delay_moi(function(){
+     // alert("Time elapsed!");
+	  get_table_by_filter();
+    }, 1500 );
+    });
+</script><div class="filter_title clearfix nosel " id="pt_title">     <!----Type of Projector block stats here --->
+<div class="filter-title-text">Technology</div></div>
+<div id="group_inner_4" class="filter_group filter_group_v2">
+	
+			<label data-title="All" title="All" class="checkbox-label">
+				<input checked="checked" data-field="projector_type" data-value="*all*" class="check-input FirstTechnology acb_all " type="checkbox" onclick="doAll_FirstTechnology(this); get_table_by_filter();" value="0" id="allFirstTechnology">
+				<span class="fancy-checkbox"></span>
+				<span class="checkbox-title">All</span>
+			</label>		<label data-title="All" title="All" class="checkbox-label">
+				<input type="checkbox" onclick="remove_all_check_FirstTechnology(); get_table_by_filter();" class="check-input FirstTechnology analog_FirstTechnology" value="Analog" name="FirstTechnology" id="FirstTechnology">
+				<span class="fancy-checkbox"></span>
+				<span class="checkbox-title">Analog</span>
+			</label>   		<label data-title="All" title="All" class="checkbox-label">
+				<input type="checkbox" onclick="remove_all_check_FirstTechnology(); get_table_by_filter();" class="check-input FirstTechnology dect_FirstTechnology" value="DECT" name="FirstTechnology" id="FirstTechnology">
+				<span class="fancy-checkbox"></span>
+				<span class="checkbox-title">DECT</span>
+			</label>   		<label data-title="All" title="All" class="checkbox-label">
+				<input type="checkbox" onclick="remove_all_check_FirstTechnology(); get_table_by_filter();" class="check-input FirstTechnology digital_FirstTechnology" value="Digital" name="FirstTechnology" id="FirstTechnology">
+				<span class="fancy-checkbox"></span>
+				<span class="checkbox-title">Digital</span>
+			</label>   </div>    <!----Type of Projector block ends here ---><script type="text/javascript">
+    function	remove_all_check_FirstTechnology()
+    {
+	  document.getElementById('allFirstTechnology').checked =false;  
+	   
+	}
+
+    function doAll_FirstTechnology(obj) {
+	var cb = document.getElementsByClassName('check-input FirstTechnology');
+      for (var i = 0; i < cb.length; i++) {
+		  //alert(obj);
+        cb[i].checked = obj.checked;
+      }
+
+    }
+
+</script><div class="filter_title clearfix nosel " id="FirstPrice_title">    <!----Price block stats here --->
+<div class="filter_title">Price</div></div>
+<div id="FirstPrice_box">
+<input type="text" id="FirstPrice" class="inp_srch">
+<input type="hidden" id="min_FirstPrice" value="">
+<input type="hidden" id="max_FirstPrice" value="">
+<div id="slider-range_FirstPrice" style="width:70%; margin-top:10px;" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 0%; width: 100%;"></div><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></a><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 100%;"></a></div>
+</div>   <!----Price block stats here ---><script type="text/javascript">
+
+$( "#slider-range_FirstPrice" ).slider({
+range: true,
+min: 0,
+max: 376,
+values: [ 0, 376 ],
+
+
+
+stop: function( event, ui ) {
+$( "#FirstPrice" ).val( ui.values[ 0 ] + ' - ' + ui.values[ 1 ] + '');
+$( "#min_FirstPrice" ).val(ui.values[ 0 ]);
+$( "#max_FirstPrice" ).val(ui.values[ 1 ]);
+
+  change: { get_table_by_filter(); }
+}
+});
+$( "#FirstPrice" ).val( $( "#slider-range_FirstPrice" ).slider( "values", 0 ) +
+' - ' + $( "#slider-range_FirstPrice" ).slider( "values", 1 ) + '' );
+
+</script><div class="filter_title clearfix nosel " id="Estimated_Price_title">    <!----Price block stats here --->
+<div class="filter_title">Estimated Price</div></div>
+<div id="Estimated_Price_box">
+<input type="text" id="Estimated_Price" class="inp_srch">
+<input type="hidden" id="min_Estimated_Price" value="">
+<input type="hidden" id="max_Estimated_Price" value="">
+<div id="slider-range_Estimated_Price" style="width:70%; margin-top:10px;" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 0%; width: 100%;"></div><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></a><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 100%;"></a></div>
+</div>   <!----Price block stats here ---><script type="text/javascript">
+
+$( "#slider-range_Estimated_Price" ).slider({
+range: true,
+min: 0,
+max: 376,
+values: [ 0, 376 ],
+
+
+
+stop: function( event, ui ) {
+$( "#Estimated_Price" ).val( ui.values[ 0 ] + ' - ' + ui.values[ 1 ] + '');
+$( "#min_Estimated_Price" ).val(ui.values[ 0 ]);
+$( "#max_Estimated_Price" ).val(ui.values[ 1 ]);
+
+  change: { get_table_by_filter(); }
+}
+});
+$( "#Estimated_Price" ).val( $( "#slider-range_Estimated_Price" ).slider( "values", 0 ) +
+' - ' + $( "#slider-range_Estimated_Price" ).slider( "values", 1 ) + '' );
+
+</script>
+
+
+<br>	
+    
+    			
+</form></div> <!--- filter panel ends here  -->
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function get_table_by_filter()
+    {
+	
+	
+	$('#dvLoading').fadeIn(2000);	
+ 
+
+
+
+	
+var titlemoi=document.getElementById('titlemoi').value;	
+
+
+  
+							
+
+
+
+var obj_checkbox_FirstTechnology=document.getElementsByClassName('check-input FirstTechnology');
+
+
+
+if(document.getElementById('allFirstTechnology').checked ==true)
+{
+	var pr_count_FirstTechnology=0;
+	var pr_FirstTechnology='';
+}
+if(document.getElementById('allFirstTechnology').checked ==false)
+{
+	  
+	
+	var pr_count_FirstTechnology=0;
+
+	var pr_FirstTechnology='';
+	var p1_FirstTechnology='';
+	for (var i = 1; i < obj_checkbox_FirstTechnology.length; i++) 
+	{
+		if(obj_checkbox_FirstTechnology[i].checked==true)
+		{
+		p1_FirstTechnology= obj_checkbox_FirstTechnology[i].value;
+		pr_FirstTechnology+=p1_FirstTechnology+',';
+		pr_count_FirstTechnology++;
+		}
+	}
+}
+
+ 
+				    
+
+var min_FirstPrice=document.getElementById('min_FirstPrice').value;
+var max_FirstPrice=document.getElementById('max_FirstPrice').value;
+
+ 
+				    
+
+var min_Estimated_Price=document.getElementById('min_Estimated_Price').value;
+var max_Estimated_Price=document.getElementById('max_Estimated_Price').value;
+
+
+
+
+var tableType=document.getElementById('table_type').value;	
+	
+var oTable = $('#data').dataTable();	
+
+
+
+//var o = new FixedHeader(oTable);
+$('.fixedHeader').remove();
+oTable.fnDestroy();
+
+setTimeout('',2000);
+
+
+
+
+//alert('moi');
+//alert(tableType);
+if(tableType==1)
+{
+	
+	//alert('moi');
+    var initParams ={
+		
+		"bProcessing": false,
+	        "bServerSide": true,
+	        "sServerMethod": "GET",
+	        "sAjaxSource": "/filter_data.php?catlinkok=baby_monitors&titlemoi="+titlemoi+"&FirstTechnology="+pr_FirstTechnology+"&min_FirstPrice="+min_FirstPrice+"&max_FirstPrice="+max_FirstPrice+"&min_Estimated_Price="+min_Estimated_Price+"&max_Estimated_Price="+max_Estimated_Price+"",
+	        "iDisplayLength": 10,
+	        "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+	        "aaSorting": [[0, 'asc']],
+	        "sPaginationType": "full_numbers",
+	         "aoColumns": [
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": false, "bSearchable": true, "bSortable": true },
+			//{ "bVisible": false, "bSearchable": true, "bSortable": true },
+			{ "bVisible": false, "bSearchable": true, "bSortable": true }
+	        ]
+	};
+	
+   // alert(JSON.stringify(initParams));
+	//document.write(JSON.stringify(initParams));
+}	
+
+if(tableType==2)
+{
+    var initParams ={
+		
+		"bProcessing": false,
+	        "bServerSide": true,
+	        "sServerMethod": "GET",
+	        "sAjaxSource": "/filter_data.php?catlinkok=baby_monitors&titlemoi="+titlemoi+"&FirstTechnology="+pr_FirstTechnology+"&min_FirstPrice="+min_FirstPrice+"&max_FirstPrice="+max_FirstPrice+"&min_Estimated_Price="+min_Estimated_Price+"&max_Estimated_Price="+max_Estimated_Price+"",
+	        "iDisplayLength": 10,
+	        "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+	        "aaSorting": [[0, 'asc']],
+	        "sPaginationType": "full_numbers",
+	         "aoColumns": [
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true },
+			//{ "bVisible": false, "bSearchable": true, "bSortable": true },
+			{ "bVisible": true, "bSearchable": true, "bSortable": true }
+	        ]
+	};
+	
+	//alert(JSON.stringify(initParams));
+}
+
+	
+ //alert('kkkk');   
+  
+    oTable = $('#data').dataTable(initParams);
+     new FixedHeader( oTable );
+     
+    setTimeout(set_num_record,2000);
+    $('#dvLoading').fadeOut();	   
+
+
+
+	
+	}
+</script>
+
+
+</div>
+
+	
+	<div class="basic_advanced thm-hover basic_advanced_adv thm-abl" onclick="advanced_table()" id="advanced_table">Advanced Table
+	<img src="http://www.bestcompares.com/images/right_arrow.png" width="12" height="9">
+	</div>
+	
+	<div class="basic_advanced thm-hover basic_advanced_adv thm-abl" onclick="basic_table()" id="basic_table" style="display:none;"><img src="http://www.bestcompares.com/images/left_arrow.png" width="12" height="9"> Basic Table</div>
+	 <input type="hidden" name="table_type" id="table_type" value="1"> 
+	 <input type="hidden" value="" id="selectedItem" name="selectedItem">
+     <input type="hidden" value="161" id="num_rows" name="num_rows">
+<div style="width:80%;float:right;">
+    
+  <div style="width:100%; display:none; height:60px;" id="filter_record">
+  
+  <div style="text-transform:uppercase; color:#555; margin: 9px 0 0; clear:both;  float:left;" id="setnumr">161  Matching Results &nbsp;&nbsp;</div>
+ 
+  </div>
+   <div style="clear:both;">
+   
+   <div style="width:100%;">
+    
+	<div id="data_wrapper" class="dataTables_wrapper table_scroll_left" role="grid" style="position: relative;"><div id="data_length" class="dataTables_length"><label class="float-left mid-margin-right">Show</label><label><select size="1" name="data_length" aria-controls="data"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select> entries</label></div><div class="dataTables_filter" id="data_filter"><label>Search: <input id="adv_search" name="adv_search" type="text" aria-controls="data"></label></div>
+	<table cellpadding="0" cellspacing="0" border="0" id="data" width="100%" class="dataTable" aria-describedby="data_info" style="width: 960px;">
+
+	<thead>
+        <tr class="bg_cl" role="row"><th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Baby Monitors: activate to sort column ascending"><span style="margin-top:20px;">Baby Monitors</span></th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Technology: activate to sort column ascending">Technology</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">Price</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Audio: activate to sort column ascending">Audio</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Video: activate to sort column ascending">Video</th></tr>
+    </thead> 
+    
+    <tfoot></tfoot>
+
+<tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(156)"><img src="http://img.bestcompares.com/img/6/1/7916-1-the-first-years-true-choice-premium-digital-monitor-two-parent-p400-baby_monitors.jpg" width="60" height="60" alt="The First Years True Choice Premium Digital Monitor - Two-Parent (P400)"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/the-first-years-true-choice-premium-digital-monitor-two-parent-p400-156.html" class="ac_data">  <h3>The First Years True Choice Premium Digital Monitor - Two-Parent (P400)</h3></a>
+		   <br> <input type="checkbox" value="156" name="check_156" id="check_156" onclick="select_product(this.value,'http://img.bestcompares.com/img/6/1/7916-1-the-first-years-true-choice-premium-digital-monitor-two-parent-p400-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(156)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">Digital</td><td class="">$45</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="even"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(157)"><img src="http://img.bestcompares.com/img/4/8/4384-1-tommee-tippee-digital-monitor-baby_monitors.jpg" width="60" height="60" alt="Tommee Tippee Digital Monitor"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/tommee-tippee-digital-monitor-157.html" class="ac_data">  <h3>Tommee Tippee Digital Monitor</h3></a>
+		   <br> <input type="checkbox" value="157" name="check_157" id="check_157" onclick="select_product(this.value,'http://img.bestcompares.com/img/4/8/4384-1-tommee-tippee-digital-monitor-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(157)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">DECT</td><td class="">$98</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="odd"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(158)"><img src="http://img.bestcompares.com/img/4/6/4964-1-tommee-tippee-digital-video-monitor-baby_monitors.jpg" width="60" height="60" alt="Tommee Tippee Digital Video Monitor"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/tommee-tippee-digital-video-monitor-158.html" class="ac_data">  <h3>Tommee Tippee Digital Video Monitor</h3></a>
+		   <br> <input type="checkbox" value="158" name="check_158" id="check_158" onclick="select_product(this.value,'http://img.bestcompares.com/img/4/6/4964-1-tommee-tippee-digital-video-monitor-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(158)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div>&nbsp; <div class="ads_pou122" style="height: 0px;"></div><br></td><td class="">DECT</td><td class="">$301</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="even"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(159)"><img src="http://img.bestcompares.com/img/5/7/5475-1-tommee-tippee-sound-and-movement-monitor-baby_monitors.jpg" width="60" height="60" alt="Tommee Tippee Sound and Movement Monitor"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/tommee-tippee-sound-and-movement-monitor-159.html" class="ac_data">  <h3>Tommee Tippee Sound and Movement Monitor</h3></a>
+		   <br> <input type="checkbox" value="159" name="check_159" id="check_159" onclick="select_product(this.value,'http://img.bestcompares.com/img/5/7/5475-1-tommee-tippee-sound-and-movement-monitor-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(159)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">DECT</td><td class="">$150</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="odd"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(160)"><img src="http://img.bestcompares.com/img/8/6/5568-1-vtech-safe-and-sound-digital-audio-monitor-baby_monitors.jpg" width="60" height="60" alt="Vtech Safe&amp;Sound Digital Audio Monitor"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/vtech-safe-and-sound-digital-audio-monitor-160.html" class="ac_data">  <h3>Vtech Safe&amp;Sound Digital Audio Monitor</h3></a>
+		   <br> <input type="checkbox" value="160" name="check_160" id="check_160" onclick="select_product(this.value,'http://img.bestcompares.com/img/8/6/5568-1-vtech-safe-and-sound-digital-audio-monitor-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(160)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">DECT</td><td class="">$40</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="even"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(161)"><img src="http://img.bestcompares.com/img/1/5/7751-1-vtech-safe-and-sound-digital-audio-monitor-with-two-parent-units-baby_monitors.jpg" width="60" height="60" alt="Vtech Safe&amp;Sound Digital Audio Monitor with Two Parent Units"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/vtech-safe-and-sound-digital-audio-monitor-with-two-parent-units-161.html" class="ac_data">  <h3>Vtech Safe&amp;Sound Digital Audio Monitor with Two Parent Units</h3></a>
+		   <br> <input type="checkbox" value="161" name="check_161" id="check_161" onclick="select_product(this.value,'http://img.bestcompares.com/img/1/5/7751-1-vtech-safe-and-sound-digital-audio-monitor-with-two-parent-units-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(161)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">Digital</td><td class="">$60</td><td class=""></td><td class=""></td></tr><tr class="odd"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(162)"><img src="http://img.bestcompares.com/img/4/4/8544-1-vtech-safe-and-sound-full-color-video-and-audio-monitor-with-four-cameras-baby_monitors.jpg" width="60" height="60" alt="Vtech Safe&amp;Sound Full Color Video and Audio Monitor with Four Cameras"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/vtech-safe-and-sound-full-color-video-and-audio-monitor-with-four-cameras-162.html" class="ac_data">  <h3>Vtech Safe&amp;Sound Full Color Video and Audio Monitor with Four Cameras</h3></a>
+		   <br> <input type="checkbox" value="162" name="check_162" id="check_162" onclick="select_product(this.value,'http://img.bestcompares.com/img/4/4/8544-1-vtech-safe-and-sound-full-color-video-and-audio-monitor-with-four-cameras-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(162)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div>&nbsp; <div class="ads_pou111" style="height: 1px;"></div><br></td><td class="">Digital</td><td class="">$279</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="even"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(163)"><img src="http://img.bestcompares.com/img/6/4/8446-1-vtech-safe-and-sound-full-color-video-and-audio-monitor-with-two-cameras-baby_monitors.jpg" width="60" height="60" alt="Vtech Safe&amp;Sound Full Color Video and Audio Monitor with Two Cameras"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/vtech-safe-and-sound-full-color-video-and-audio-monitor-with-two-cameras-163.html" class="ac_data">  <h3>Vtech Safe&amp;Sound Full Color Video and Audio Monitor with Two Cameras</h3></a>
+		   <br> <input type="checkbox" value="163" name="check_163" id="check_163" onclick="select_product(this.value,'http://img.bestcompares.com/img/6/4/8446-1-vtech-safe-and-sound-full-color-video-and-audio-monitor-with-two-cameras-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(163)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">Digital</td><td class="">$180</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="odd"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(164)"><img src="http://img.bestcompares.com/img/6/3/8636-1-vtech-safe-and-sound-full-color-video-and-audio-monitor-with-three-cameras-baby_monitors.jpg" width="60" height="60" alt="Vtech Safe&amp;Sound Full-Color Video and Audio Monitor with Three Cameras"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/vtech-safe-and-sound-full-color-video-and-audio-monitor-with-three-cameras-164.html" class="ac_data">  <h3>Vtech Safe&amp;Sound Full-Color Video and Audio Monitor with Three Cameras</h3></a>
+		   <br> <input type="checkbox" value="164" name="check_164" id="check_164" onclick="select_product(this.value,'http://img.bestcompares.com/img/6/3/8636-1-vtech-safe-and-sound-full-color-video-and-audio-monitor-with-three-cameras-baby_monitors.jpg')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(164)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">Digital</td><td class="">$230</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr><tr class="even"><td class=" sorting_1">
+		   <div style="width:100%;">
+		   <div style="width:30%;float:left">
+		   <a href="#" class="ac_data" onclick="show_detail(165)"><img src="http://img.bestcompares.com/img/8/9/4198-1-whitings-smart-baby-monitor-baby_monitors.png" width="60" height="60" alt="Whitings Smart Baby Monitor"></a></div>
+		   <div style="width:70%;float:right"> <a href="http://baby-monitors.bestcompares.com/d/whitings-smart-baby-monitor-165.html" class="ac_data">  <h3>Whitings Smart Baby Monitor</h3></a>
+		   <br> <input type="checkbox" value="165" name="check_165" id="check_165" onclick="select_product(this.value,'http://img.bestcompares.com/img/8/9/4198-1-whitings-smart-baby-monitor-baby_monitors.png')"><span class="tab_font" style="cursor:pointer" onclick="compare_item()">COMPARE</span> | <a href="#" class="ac_data" onclick="show_detail(165)"><span class="tab_font">SEE DETAIL<img src="http://www.bestcompares.com/images/bread.jpg"></span> </a>
+		   </div></div></td><td class="">Digital</td><td class="">$250</td><td class="">Baby monitors that only transmit sound.</td><td class="">Baby monitors that transmit both video and sound. For parents ...</td></tr></tbody></table><div class="dataTables_info" id="data_info">Showing 1 to 10 of 161 entries</div><div class="dataTables_paginate paging_full_numbers" id="data_paginate"><a tabindex="0" class="first paginate_button paginate_button_disabled" id="data_first">First</a><a tabindex="0" class="previous paginate_button paginate_button_disabled" id="data_previous">Previous</a><span><a tabindex="0" class="paginate_active">1</a><a tabindex="0" class="paginate_button">2</a><a tabindex="0" class="paginate_button">3</a><a tabindex="0" class="paginate_button">4</a><a tabindex="0" class="paginate_button">5</a></span><a tabindex="0" class="next paginate_button" id="data_next">Next</a><a tabindex="0" class="last paginate_button" id="data_last">Last</a></div></div>
+
+ <input id="comp_button1" type="button" value="Compare Selected Items" name="save" class="footer-button1" onclick="compare_item()">	
+</div>
+</div>	
+
+</div>
+<div style="clear:both;">
+
+
+<div style="padding-left:250px; padding-top:20px;"><div class="ads02" style="position: absolute; top: 850px; left: 528px; z-index: 100;"> 
+<div id="addss1" style="float:left;">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- bestcompares336 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-1170052189431952" data-ad-slot="8419551873"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+<div id="addss2" style="float:left;">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- bestcompares336 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-1170052189431952" data-ad-slot="8419551873"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+</div></div>
+
+<div style="width:100%;height:0;float: left;margin: 48px 0 0;text-align: center;">
+		
+        
+        
+ - <a href="http://baby-monitors.bestcompares.com/?moi_fi_FirstTechnology=Analog">Analog</a>  - <a href="http://baby-monitors.bestcompares.com/?moi_fi_FirstTechnology=DECT">DECT</a>  - <a href="http://baby-monitors.bestcompares.com/?moi_fi_FirstTechnology=Digital">Digital</a>         
+        
+        
+  
+  
+		<a href="#" id="arxi" class="big-link" data-reveal-id="myModal" data-animation="fade" style="display:none;">ok</a>
+	  	<div id="myModal" class="reveal-modal">
+               <div style="display: table; width: 700px; height:270px">
+                   <div style="display: table-row;">	
+                       <div style="display: table-cell; left:30; vertical-align:top;width: 340px;">
+                          <div class="metakini_pou_mod1"></div>
+					   </div>
+                       <div style="display: table-cell;left:30;width: 340px;vertical-align:top; float:left;">
+                             <div class="metakini_pou_mod2"></div> 
+                      </div>
+                   </div>
+               </div> 
+               
+               <div class="playmod111" style="padding-top:10px; padding-left:30px; font-size:20px; cursor:pointer; "></div>
+        
+
+			<a class="close-reveal-modal">×</a>
+		</div>  
+  
+     
+
+        
+        
+        
+		<div class="copyright"><h5>Copyright © 2016 <span style="color:#ae1804;font-weight:700;"><a href="http://www.bestcompares.com/">Best Compares</a> <a href="http://www.bestcompares.com/">Privacy Policy</a> <a href="http://www.bestcompares.com/">Terms of Use</a></span>. All rights reserved.</h5></div> 
+        <!--check edw, prepei na antikatastathei to "Your Corporation" me "Best Compares" k allaksa ligo th seira-->
+
+</div>
+</div>
+
+</div><!----------------End Whole Container-------------------->
+ <div id="footer" class="footer_back">
+	   	
+	 
+	  <div style="width:100%; padding:20px 0 0;">
+	  
+	  <div id="main_container_down"> 
+	  
+	  
+	  <span class="sr-icon "></span>
+<span class="tagline-text2 "></span>
+
+<div style="min-width:350px; float:left;">
+
+<div style="" id="selected_proj">
+		 
+	 </div> </div>
+	  
+	   <input type="button" value="Compare Selected Items" name="save" class="footer-button" onclick="compare_item()">
+	   
+	   <p style="color:#fff; position:absolute; top:30px; right:330px; cursor: pointer;" onclick="clear_footer()">Clear all</p>
+       
+    </div>
+	
+	</div>
+ </div>
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55527246-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+
+		  if (!!$('.ads01').offset()) { 
+		 // console.log('po.. = ' + $('.ads01').height());
+		    var stickyTop1 = $('.ads01').offset().top;
+				$(window).scroll(function(){ 
+										  
+						if (!!$('.ads_pou111').offset()) {			  
+							 var tmetakini_pou1 = $('.ads_pou111').offset().top -50;  //pou
+							//  console.log('po.. = ' + tmetakini_pou1);
+							 var windowTop1 = $(window).scrollTop(); 
+							  if (stickyTop1 < windowTop1){
+								$('.ads01').css({ position: 'absolute', top: tmetakini_pou1 , left:$('.ads_pou111').offset().left-100, 'z-index': 100 });
+								$('.ads_pou111').css({  'height': $('.ads01').height() });
+								 
+							  }
+							  else {
+								$('.ads01').css('position','static');
+								$('.ads_pou111').css({   'height': 1 });
+							  }
+						}
+						
+
+				});
+		  }
+		 
+		 setTimeout(function() { 
+		  if (!!$('.ads02').offset()) { 
+		  //console.log('po.. = ' + $('.ads02').height());
+		    var stickyTop2 = $('.ads_pou122').offset().top;
+				$(window).scroll(function(){ 
+										  
+						if (!!$('.ads_pou122').offset()) {			  
+							 var tmetakini_pou2 = $('.ads_pou122').offset().top+50;  //pou
+							//  console.log('po.. = ' + tmetakini_pou2);
+							 var windowTop2 = $(window).scrollTop(); 
+							  if (stickyTop2 > windowTop2){
+								$('.ads02').css({ position: 'absolute', top: tmetakini_pou2 , left:$('.ads_pou122').offset().left, 'z-index': 100 });
+								$('.ads_pou122').css({  'height': $('.ads02').height() });
+								 
+							  }
+							  else {
+								$('.ads02').css('position','static');
+								$('.ads_pou122').css({   'height': 1 });
+							  }
+						}
+						
+
+				});
+		  }
+        ;}, 2000);
+
+
+		$(function(){ 
+				   
+             
+			 
+	
+	  
+			 
+				   });
+		
+
+	
+		
+</script>		
+
+
+</div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><div class=" FixedHeader_Cloned fixedHeader FixedHeader_Header" style="position: absolute; top: 322px; left: 220px; z-index: 104; width: 960px;"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="dataTable" aria-describedby="data_info" style="width: 960px; margin: 0px;">
+	
+	
+	<thead>
+        <tr class="bg_cl table_title_collaps" role="row"><th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Baby Monitors: activate to sort column ascending" style="width: 385px;"><span style="margin-top:20px;">Baby Monitors</span></th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Technology: activate to sort column ascending" style="width: 93px;">Technology</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending" style="width: 41px;">Price</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Audio: activate to sort column ascending" style="width: 131px;">Audio</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="data" rowspan="1" colspan="1" aria-label="Video: activate to sort column ascending" style="width: 200px;">Video</th></tr>
+    </thead></table></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
