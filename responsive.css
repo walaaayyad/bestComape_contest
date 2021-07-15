@@ -1,0 +1,140 @@
+/*  fix responsive issue  */
+/**** For Small Screen [ mobile phone ] with max width 576px ****/
+@media screen and (max-width: 576px) {
+    * {
+      box-sizing: border-box;
+    }
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    #whole_container .header_back {
+        padding: 5px 0 !important;
+        height: 80px !important;
+        position: fixed;
+        z-index: 100;
+    }
+    header .logo img {
+        height: 60px;
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+    #search {
+        margin: 7px 0 0 67px !important;
+        background-size: contain !important;
+        width: 50% !important;
+        position: absolute;
+        top: 15%;
+        right: 29%;
+    }
+    #search input {
+        position: absolute !important;
+        width: 135px !important;
+        left: 5px !important;
+        top: -5 !important;
+    }
+    header .browse_div {
+        padding: 1px !important;
+        position: absolute;
+        top: 60%;
+        right: -5px;
+    }
+    #main_container, #main_container_up, #main_container_down {
+        max-width: fit-content;
+        min-width: 100%;
+        min-height: 20px !important;
+    }
+    #main_container .breadcrumb {
+        padding: 3px 0;
+    }
+    #main_container .breadcrumb ul li {
+        padding-left: 5px;
+    }
+    #main_container .breadcrumb .color, #main_container .breadcrumb a {
+        font-size: 1rem;
+    }
+    .soft-list-a, .soft-list-b {
+        width: 98vw;
+    }
+    .soft-list-a .title, .soft-list-b .title {
+        width: 225px;
+    }
+    .soft-list-a .plyr, .soft-list-b .plyr {
+        width: 30px;
+    }
+    .cntmodule {
+        width: 98vw;
+        margin: 5px 5px 20px 5px;
+    }
+    .heading {
+        background-size: contain;
+    }
+    .care-link, .care-link a {
+        width: 98vw;
+        padding-top: 1px;
+    }
+    .footerhome {
+        width: 98vw;
+        background-size: contain;
+    }
+    .copyright h5 {
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+/**********************************************/
+    /* Page 111 */
+   
+    header {
+        min-width: 100vw !important;
+        position: relative;
+    }
+    .compare_txt, .compare_txt a {
+        width: 30% !important;
+        padding-left: 0px !important;
+    }
+    .left_panel {
+        width: 100% !important;
+    }
+    #main_container, #main_container_up, #main_container_down {
+        max-width: inherit !important;
+        min-width: 100vw !important;
+        padding-top: 50px;
+    }
+    h1 {
+        margin: 20px !important;
+        margin-top: 30px !important;
+        font-size: 20px !important;
+    }
+    .basic_advanced {
+        margin-top: 7px !important;
+    }
+    .sorting_1 {
+        display: flex;
+    }
+    .sorting_1:first-child {
+        width: 65% !important;
+    } 
+    /* Table scroll left */
+    .basic_advanced {
+        float: left !important;
+        margin: 10px !important;
+        font-size: 15px !important;
+        width: 40% !important;
+    }
+    .table_scroll_left{
+        width: 100vw;
+        margin-left: -70px;
+        overflow: scroll;
+        
+    }
+    /* collaps second table header to remove dublicate */
+    .table_title_collaps {
+        visibility: collapse;
+    }
+}
+    
