@@ -137,4 +137,25 @@
         visibility: collapse;
     }
 }
+
+/**** For medium & large Screen [ Tab & Desktop ] with min width 577px ****/
+@media screen and (min-width: 577px) {
+
+    #main_container, #main_container_up, #main_container_down {
+        min-width: 100vw !important;
+    }
+    .left_panel {
+        width: 14% !important;
+    }
+    table.dataTable {
+        width: 100%;
+    }
+    .dataTables_wrapper {
+        overflow-x: scroll;
+        width: fit-content;
+    }
+    .table_title_collaps {
+        visibility: collapse;
+    }
+}
     
